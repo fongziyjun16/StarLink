@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
-import { Row, Col } from 'antd';
+import { Row, Col } from 'antd'
 import axios from 'axios';
 import SatSetting from './SatSetting';
 import SatelliteList from './SatelliteList';
+import WorldMap from './WorldMap';
 import {NEARBY_SATELLITE, SAT_API_KEY, STARLINK_CATEGORY} from "../constants";
+
 
 class Main extends Component {
     constructor(){
@@ -55,7 +57,7 @@ class Main extends Component {
                     />
                 </Col>
                 <Col span={16} className="right-side">
-                    right
+                    <WorldMap />
                 </Col>
             </Row>
         );
