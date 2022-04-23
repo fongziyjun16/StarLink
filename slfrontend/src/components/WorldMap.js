@@ -56,7 +56,7 @@ class WorldMap extends Component {
             context.fill();
             context.stroke();
 
-            context.strokeStyle = 'rgba(220, 220, 220, 0.1)';
+            context.strokeStyle = 'rgba(220, 220, 220, 1)';
             context.beginPath();
             path(graticule());
             context.lineWidth = 0.1;
